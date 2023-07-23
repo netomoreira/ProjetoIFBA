@@ -4,8 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viaje com a melhor agência de viagens do mundo | GIN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+        *{
+            font-family: 'Rubik', sans-serif;
+        }
+        body{
+            margin: 0;
+        }
+        header {
+            background: #75CCFF;
+            padding: 40px;
+            display: flex; /* Adiciona flexbox ao header */
+        }
+
+        nav {
+            background: #004AAD;
+            display: flex; /* Adiciona flexbox aos links */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+        }
+
+        nav a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            margin-left: 20px; /* Adiciona um espaçamento entre os links */
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #75CCFF; /* Muda a cor do texto do link para azul ao passar o mouse */
+        }
+
+        nav a i {
+            margin-bottom: 5px;
+            transition: color 0.3s; /* Adiciona uma transição suave para a mudança de cor */
+        }
+
+        nav a:hover i {
+            color: #75CCFF; /* Muda a cor do ícone para azul ao passar o mouse */
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+    </header>
+    <nav>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-plane"></i>
+            Passagens
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-bed"></i>
+            Hospedagens
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-tags"></i>
+            Promoções
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-suitcase"></i>
+            Pacotes
+        </a>
+    </nav>
+    <main>
+        <section>
+            <div class="inputs">
+                <form>
+                    <label for="origem">Cidade de Origem:</label>
+                    <select id="origem">
+                        <option value="Salvador, BA">Salvador, BA</option>
+                        <option value="São Paulo, SP">São Paulo, SP</option>
+                    </select>
+                    <label for="destino">Cidade de Destino:</label>
+                    <select id="destino">
+                        <option value="Curitiba, PR">Curitiba, PR</option>
+                        <option value="Rio de Janeiro, RJ">Rio de Janeiro, RJ</option>
+                    </select>
+                    <input type="button" value="Enviar" onclick="enviarFormulario()">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
