@@ -18,79 +18,192 @@
         header {
             background: #75CCFF ;
             padding: 40px;
-            display: flex; /* Adiciona flexbox ao header */
+            display: flex;
         }
 
         nav {
             background: #004AAD;
-            display: flex; /* Adiciona flexbox aos links */
-            justify-content: center; /* Centraliza horizontalmente */
-            align-items: center; /* Centraliza verticalmente */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         nav a {
             color: white;
             padding: 10px;
             text-decoration: none;
-            margin-left: 20px; /* Adiciona um espaçamento entre os links */
+            margin-left: 20px;
             transition: color 0.3s;
         }
         nav a:hover {
-            color: #75CCFF; /* Muda a cor do texto do link para azul ao passar o mouse */
+            color: #75CCFF;
         }
 
         nav a i {
             margin-bottom: 5px;
-            transition: color 0.3s; /* Adiciona uma transição suave para a mudança de cor */
+            transition: color 0.3s;
         }
 
         nav a:hover i {
-            color: #75CCFF; /* Muda a cor do ícone para azul ao passar o mouse */
+            color: #75CCFF; 
+        }
+
+        section{
+            margin: 0 11%;
+            padding: 1% 0 3% 2%;
+            background: #004AAD;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(68,68,68,0.2);
+        }
+
+        section h1{
+            color: white;
+            font-size: 20px;
+            margin-bottom: 30px;
         }
 
         .origem{
             display: inline;
-        }
-
-        .origem input{
             margin-left: 0px;
-            width: 150px;
-            height: 50px;
-            width: 200px;
-            border-radius: 10px 0 0 10px;
+            height: 60px;
+            width: 140px;
+            border-radius: 6px 0 0 6px;
             outline: none;
-            border: none;
+            padding: 0 15px;
+            font-size: 1em;
+            border: 1px solid #ccc;
         }
 
         .destino{
             display: inline;
+            margin-left: -5px;
+            height: 60px;
+            width: 140px;
+            border-radius: 0 6px 6px 0;
+            outline: none;
+            border-left: solid 1px black;
+            padding: 0 15px;
+            font-size: 1em;
+            border: 1px solid #ccc;
         }
 
-        .destino input{
-            margin-left: -5px;
-            width: 150px;
-            height: 50px;
-            width: 200px;
-            border-radius: 0 10px 10px 0;
+        .datai{
+            display: inline;
+            margin-left: 7px;
+            height: 60px;
+            width: 160px;
+            border-radius: 6px 0 0 6px;
             outline: none;
-            border: none;
+            padding-left: 15px;
+            font-size: 1em;
+            padding: 0 15px;
+            border: 1px solid #ccc;
+        }
+
+        .datav{
+            display: inline;
+            margin-left: -5px;
+            height: 60px;
+            width: 160px;
+            border-radius: 0 6px 6px 0;
+            outline: none;
+            border-left: solid 1px black;
+            padding: 0 15px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+        }
+
+        .pass{
+            display: inline;
+            margin-left: 7px;
+            height: 60px;
+            width: 140px;
+            border-radius: 6px;
+            outline: none;
+            border-left: solid 1px black;
+            padding: 0 15px;
+            font-size: 1em;
+            border: 1px solid #ccc;
         }
 
         .botao{
-            margin-left: 5px;
+            display: inline;
+            margin-left: 10px;
             height: 50px;
-           display: inline;
+            width: 110px;
+            border-radius: 50px;
+            border: none;
+            background: #75CCFF;
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
         }
 
         main{
             margin: 30px;
         }
+@media screen and (max-width: 600px) {
+  header {
+    padding: 50px;
+  }
 
-        section{
-            background: #004AAD;
-            padding: 70px;
-            border-radius: 20px;
-        }
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    flex: 1;
+    margin: 5px;
+  }
+
+  .inputs {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .origem,
+  .destino,
+  .datai,
+  .datav,
+  .pass {
+    width: 100%;
+    max-width: 300px;
+    margin: 5px;
+    border-radius: 6px;
+  }
+
+  .botao {
+    width: 100%;
+    max-width: 330px;
+    margin: 5px;
+  }
+
+  section {
+    margin: 0 20px;
+    padding: 50px 10px 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .origem,
+  .destino{
+    max-width: 83%;
+  }
+
+  section h1 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    position: absolute; 
+    top: 0;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
     </style>
 </head>
 <body>
@@ -116,18 +229,20 @@
     </nav>
     <main>
         <section>
+            <h1>Passagens aéreas</h1>
             <div class="inputs">
-                <form>
-                    <div class="origem">
-                        <input type="text" placeholder="Cidade de origem">
-                    </div>
-                    <div class="destino">
-                        <input type="text" placeholder="Cidade de destino">
-                    </div>
-                    <div class="botao">
-                        <input type="button" value="Pesquisar">
-                    </div>
-                </form>
+                    <input type="text" class="origem" placeholder="Cidade de origem" list="lista-cidades">
+                    <datalist id="lista-cidades">
+                        <option value="Curitiba, Paraná, Brasil">
+                        <option value="Salvador, Bahia, Brasil">
+                        <option value="Florianópolis, Santa Catarina, Brasil">
+                        <option value="Londrina, Paraná, Brasil">
+                    </datalist>
+                    <input type="text" class="destino"placeholder="Cidade de destino" list="lista-cidades">
+                    <input type="date" class="datai" placeholder="Data de ida">
+                    <input type="date" class="datav" placeholder="Data de volta">
+                    <input type="text" class="pass" placeholder="Passageiros e classes">
+                    <input type="button" class="botao" value="Pesquisar">
             </div>
         </section>
     </main>
