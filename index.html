@@ -1,11 +1,167 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viaje com a melhor agência de aérea do mundo | GIN</title>
+    <title>Pacotes AeroGIN</title>
+    <style>
+       * {
+        margin: 0;
+        padding: 0;
+       }
+       .container{
+        width: 100%;
+        display: flex;
+       }
+       .card {
+        width: 300px;
+        height: 460px;
+        margin: 25px;
+        background-color: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px black;
+       }
+       .card-header {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+       }
+       .carousel {
+        overflow: hidden;
+        width: 400px; 
+        height: 200px; 
+       }
+
+        .slides {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+       }
+
+        .slides img {
+        width: 100%;
+        height: auto;
+       }
+            .card-img{
+        min-width: 100%;
+        width: auto;
+        height: 100%;
+       }
+       .card-body {
+        height: 170px;
+        padding: 15px;
+        text-align: center;
+        font-family: sans-serif;
+       }
+       .card-local {
+        font-size: 16px;
+        margin: 10px 0;
+       }
+       .custom-line {
+        border-top: 1px solid rgb(187, 174, 174); 
+        margin-top: 10px;
+       }
+       .card-titulo {
+        font-size: 32px;
+        margin: 15px 0;
+       }
+       .card-texto {
+        font-size: 15px;
+        width: 250px;
+        margin: 0 auto;
+       }
+       .card-footer {
+        margin-top: 10px;
+        text-align: center;
+        background-color: #000;
+       }
+       .card-footer a {
+        color: #fff;
+        display: block;
+        padding: 16px;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: 600;
+       }
+    </style>
 </head>
 <body>
-    
+   <div class="container">
+    <div class="card card-1">
+        <div class="card-header">
+            <div class="carousel">
+                <div class="slides">
+                  <img src="assets/fa.jpg" alt="Imagem 1">
+                  <img src="assets/imagem1.jpg" alt="Imagem 2">
+                  <img src="assets/rjPa.jpg" alt="Imagem 3">
+                </div>
+              </div>
+              <script>
+                let currentPosition = 0;
+                const slides = document.querySelector(".slides");
+                const slideWidth = document.querySelector(".slides img").clientWidth;
+              
+                function nextSlide() {
+                  currentPosition -= slideWidth;
+                  if (currentPosition < -(slideWidth * (slides.children.length - 1))) {
+                    currentPosition = 0;
+                  }
+                  slides.style.transform = `translateX(${currentPosition}px)`;
+                }
+              
+                function previousSlide() {
+                  currentPosition += slideWidth;
+                  if (currentPosition > 0) {
+                    currentPosition = -(slideWidth * (slides.children.length - 1));
+                  }
+                  slides.style.transform = `translateX(${currentPosition}px)`;
+                }
+              
+                setInterval(nextSlide, 3000);
+              </script>
+              
+        </div>
+        <div class="card-body">
+            <div>
+                <h3 class="card-local">Rio de Janeiro</h3>
+                <div class="custom-line"></div>
+              </div>
+            <h2 class="card-titulo">
+                <span class="currency" style="font-size: 13px;">R$</span>
+                <span class="amount" style="font-size: 32px;">511,45</span>
+              </h2>              
+            <p class="card-texto"> A partir de <b>Qui. 30 Nov</b> até <b>04 Dez</b></p>
+        </div>
+        <div class="card-footer">
+            <a href="#">EU QUERO!</a>
+        </div>
+    </div>
+    <div class="card card-1">
+        <div class="card-header">
+            <img src="assets/fa.jpg" class="card-img">
+        </div>
+        <div class="card-body">
+            <h3 class="card-local">Rio de Janeiro</h3>
+            <h2 class="card-titulo"> Promoção 1</h2>
+            <p class="card-texto"> O Rio de Janeiro é uma grande cidade brasileira à beira-mar, famosa pelas praias de Copacabana e Ipanema, pela estátua de 38 metros de altura do Cristo Redentor, no topo do Corcovado, e pelo Pão de Açúcar, um pico de granito com teleféricos até seu cume.</p>
+        </div>
+        <div class="card-footer">
+            <a href="#">EU QUERO!</a>
+        </div>
+    </div>
+    <div class="card card-1">
+        <div class="card-header">
+            <img src="assets/fa.jpg" class="card-img">
+        </div>
+        <div class="card-body">
+            <h3 class="card-local">Rio de Janeiro</h3>
+            <h2 class="card-titulo"> Promoção 1</h2>
+            <p class="card-texto"> O Rio de Janeiro é uma grande cidade brasileira à beira-mar, famosa pelas praias de Copacabana e Ipanema, pela estátua de 38 metros de altura do Cristo Redentor, no topo do Corcovado, e pelo Pão de Açúcar, um pico de granito com teleféricos até seu cume.</p>
+        </div>
+        <div class="card-footer">
+            <a href="#">EU QUERO!</a>
+        </div>
+    </div>
+   </div>
 </body>
 </html>
