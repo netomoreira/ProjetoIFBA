@@ -3,9 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viaje com a melhor agência de viagens do mundo | GIN</title>
+    <title>Viaje com a melhor agência de aérea do mundo | GIN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+
+        *{
+            font-family: 'Rubik', sans-serif;
+        }
+        main{
+        background: #1994FF;
+            padding: 30px;
+            margin: 0px;
+        }
+
+        body{
+            margin: 0;
+
+        }
+        header {
+            background: #ffffff;
+            padding: 40px;
+            display: flex;
+        }
+
+        nav {
+            background: #0057A3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            margin-left: 20px; /* Adiciona um espaçamento entre os links */
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0180F0;
+        }
+
+        nav a i {
+            margin-bottom: 5px;
+            transition: color 0.3s; /* Adiciona uma transição suave para a mudança de cor */
+        }
+
+        nav a:hover i {
+            color: #0180F0; 
+        }
+
+        section{
+            padding: 2% 0 3% 2%;
+            background: #0057A3;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(68,68,68,0.2);
+        }
+        section h1{
+            color: white;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+
+        .hospedagem {
+            padding: 1% 0 3% 2%;
+            background: #007BFF;
+            border-radius: 15px;
+            box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+            margin: 0 11%;
+        }
+
+
+        .hospedagem h2 {
+            margin: 0;
+            display: inline-block; 
+            color: #FFF;
+            text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            font-size: 25px;
+            font-style: italic;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+
+        .destino,
+        .datas,
+        .quartos {
+            margin-bottom: 10px;
+            
+        }
+
+        .destino label,
+        .datas label,
+        .quartos label {
+            color: white;
+            display: flex;
+            margin-bottom: 5px;
+            padding: 10px
+        }
+
+        .destino select,
+        .datas input,
+        .quartos select {
+            display: flex;
+            width: 50%;
+            padding: 8px;   
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 4px 4px black;
+        }
+        .datas input{
+            cursor: pointer;
+        }
+
+        .destino select{
+            cursor: pointer;
+        }
+
+        .quartos select {
+            cursor: pointer;
+        }
+
+        .destino select[type="option"],
+        .datas input[type="date"],
+        .quartos select {
+            appearance: none;
+            -webkit-appearance: none;
+        }
+
+        .destino select[type="option"]::-webkit-input-placeholder,
+        .datas input[type="date"]::-webkit-input-placeholder,
+        .quartos select::-webkit-input-placeholder {
+            color: #aaa;
+        }
+    
+        .btn-buscar {
+            background-color: #007BFF;
+            border-color: black;
+            box-shadow: 0px 4px 4px black;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        .btn-buscar:hover {
+            background-color: #0056b3;
+        }
+
+        @media only screen and (max-width: 600px) {
+        header {
+            padding: 50px;
+        }
+
+        nav {
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            flex: 1;
+            margin: 5px;
+        }
+
+        .section {
+            flex-direction: column;
+        }
+        
+        .hospedagem h2{
+            max-width: 50%;
+            max-width: 25%;
+        }
+
+        .hospedagem {
+            max-width: 100%;
+        }
+
+        .destino select,
+        .datas input,
+        .quartos select {
+            width: 50%;
+        }
+    }
+    </style>
 </head>
 <body>
-    
+    <header>
+    </header>
+    <nav>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-plane"></i>
+            Passagens
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-bed"></i>
+            Hospedagens
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-tags"></i>
+            Promoções
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-suitcase"></i>
+            Pacotes
+        </a>
+    </nav>
+    <main>
+        <section>
+            <div class="hospedagem">
+            <h2>Escolha sua Hospedagem</h2>
+                <div class="destino">
+                <label for="destino">Destino:</label>
+                <select name="cidade" id="cidade">
+                    <option value="" disabled selected>Selecione uma cidade</option>
+                    <optgroup label="Acre (AC)">
+                    <option value="Rio Branco">Rio Branco</option>
+                    <option value="Cruzeiro do Sul">Cruzeiro do Sul</option>
+                    </optgroup>
+                    <optgroup label="Alagoas (AL)">
+                    <option value="Maceió">Maceió</option>
+                    <option value="Arapiraca">Arapiraca</option>
+                    <optgroup label="Bahia (BA)">
+                        <option value="Vitória da Conquista">Vitória da Conquista</option>
+                        <option value="Monte Santo">Monte Santo</option>
+                        <option value="Salvador">Salvador</option>
+                        <option value="Feira de Santana">Feira de Santana</option>
+                        <option value="Euclides da Cunha">Euclides da Cunha</option>
+                    <optgroup label="Santa Catarina">
+                        <option value="Blumenau">Blumenau</option>
+                        <option value="Florianópolis">Florianópolis</option>
+                        <option value="Joinville">Joinville</option>
+                        <option value="Itapema">Itapema</option>
+                        <option value="Chapecó">Chapecó</option>
+                    </optgroup>
+                    </optgroup>
+                    </optgroup>
+                </select>
+            </div>
+                <div class="datas">
+                    <label for="check-in">Check-in:</label>
+                    <input type="date" id="check-in">
+                    <label for="check-out">Check-out:</label>
+                    <input type="date" id="check-out">
+                </div>
+                <div class="quartos">
+                    <label for="quartos">Quartos:</label>
+                    <select id="quartos">
+                        <option value="1">1 Quarto</option>
+                        <option value="2">2 Quartos</option>
+                        <option value="3">3 Quartos</option>
+                        <option value="4">4 Quartos</option>
+                    </select>
+                </div>
+            <button class="btn-buscar">Buscar Hospedagem</button>
+        </div>
+    </section>
+</main>
+<footer>
+
+</footer>
 </body>
 </html>
