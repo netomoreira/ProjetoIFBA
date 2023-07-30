@@ -17,19 +17,30 @@
         }
         header {
             background: #ffffff ;
-            padding: 40px;
+            width: 100%;
+            height: 100px;
             display: flex;
         }
 
-        .retangulo{
+        header > .retangulo{
             background-color: #0057A3;
+            margin-left: 50%;
+            width: 50%;
+            height: 40%;
+            padding: 2px;
+            border-radius: 0 0 0 30px;
         }
 
         nav {
+            height: 50px;
             background: #0057A3;
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        nav > li{
+            list-style: none;
         }
 
         nav a {
@@ -144,6 +155,11 @@
             color: white;
             cursor: pointer;
             font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .botao:hover{
+            background-color: #c97c00;
         }
 
         main{
@@ -220,22 +236,30 @@
         <div class="retangulo"></div>
     </header>
     <nav>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-plane"></i>
-            Passagens
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-bed"></i>
-            Hospedagens
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-tags"></i>
-            Promoções
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-suitcase"></i>
-            Pacotes
-        </a>
+        <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-plane"></i>
+                Passagens
+            </a>
+        </li>
+        <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-bed"></i>
+                Hospedagens
+            </a>
+        </li>
+        <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-tags"></i>
+                Promoções
+            </a>
+        </li>
+        <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-suitcase"></i>
+                Pacotes
+            </a>
+        </li>
     </nav>
     <main>
         <section>
