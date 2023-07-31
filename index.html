@@ -77,6 +77,14 @@
             margin-bottom: 30px;
         }
 
+        .inputs{
+            display: flex;
+        }
+
+        .icon2{
+            display: none;
+        }
+
         .origem{
             display: inline;
             margin-left: 0px;
@@ -167,67 +175,130 @@
             padding: 30px;
             margin: 0px;
         }
+@media screen and (max-width: 1050px) {
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        flex: 1;
+        margin: 5px;
+    }
+
+    .icon1{
+        display: none;
+    }
+
+    .icon2{
+        display: block;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .origem,
+    .destino,
+    .datai,
+    .datav,
+    .pass {
+        width: 200px;
+        max-width: 300px;
+        margin: 5px;
+        border-radius: 6px;
+    }
+
+    .botao {
+        width: 100%;
+        max-width: 330px;
+        margin: 5px;
+    }
+
+    section {
+        margin: 0 20px;
+        padding: 50px 10px 20px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    section h1 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        position: absolute; 
+        top: 0;
+        margin: 0 auto;
+        padding: 10px;
+    }
+        }
 @media screen and (max-width: 600px) {
-  header {
-    padding: 50px;
-  }
+    nav {
+        flex-wrap: wrap;
+    }
 
-  nav {
-    flex-wrap: wrap;
-  }
+    nav a {
+        flex: 1;
+        margin: 5px;
+    }
 
-  nav a {
-    flex: 1;
-    margin: 5px;
-  }
+    .icon1{
+        display: none;
+    }
 
-  .inputs {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    margin-bottom: 20px;
-  }
+    .icon2{
+        display: block;
+    }
 
-  .origem,
-  .destino,
-  .datai,
-  .datav,
-  .pass {
-    width: 100%;
-    max-width: 300px;
-    margin: 5px;
-    border-radius: 6px;
-  }
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        margin-bottom: 20px;
+    }
 
-  .botao {
-    width: 100%;
-    max-width: 330px;
-    margin: 5px;
-  }
+    .origem,
+    .destino,
+    .datai,
+    .datav,
+    .pass {
+        width: 100%;
+        max-width: 300px;
+        margin: 5px;
+        border-radius: 6px;
+    }
 
-  section {
-    margin: 0 20px;
-    padding: 50px 10px 20px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
+    .botao {
+        width: 100%;
+        max-width: 330px;
+        margin: 5px;
+    }
 
-  .origem,
-  .destino{
-    max-width: 79%;
-  }
+    section {
+        margin: 0 20px;
+        padding: 50px 10px 20px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
 
-  section h1 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    position: absolute; 
-    top: 0;
-    margin: 0 auto;
-    padding: 10px;
-  }
+    section h1 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        position: absolute; 
+        top: 0;
+        margin: 0 auto;
+        padding: 10px;
+    }
 }
     </style>
 </head>
@@ -237,28 +308,32 @@
     </header>
     <nav>
         <li>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="icon1">
                 <i class="fas fa-plane"></i>
                 Passagens
             </a>
+            <a href="#" class="icon2"><i class="fas fa-plane"></i></a>
         </li>
         <li>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="icon1">
                 <i class="fas fa-bed"></i>
                 Hospedagens
             </a>
+            <a href="#" class="icon2"><i class="fas fa-bed"></i></a>
         </li>
         <li>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="icon1">
                 <i class="fas fa-tags"></i>
                 Promoções
             </a>
+            <a href="#" class="icon2"><i class="fas fa-tags"></i></a>
         </li>
         <li>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="icon1">
                 <i class="fas fa-suitcase"></i>
                 Pacotes
             </a>
+            <a href="#" class="icon2"><i class="fas fa-suitcase"></i></a>
         </li>
     </nav>
     <main>
