@@ -26,35 +26,6 @@
             padding: 40px;
             display: flex;
         }
-
-        nav {
-            background: #0057A3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        nav a {
-            color: white;
-            padding: 10px;
-            text-decoration: none;
-            margin-left: 20px; /* Adiciona um espaçamento entre os links */
-            margin-left: 20px;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #0180F0;
-        }
-
-        nav a i {
-            margin-bottom: 5px;
-            transition: color 0.3s; /* Adiciona uma transição suave para a mudança de cor */
-        }
-
-        nav a:hover i {
-            color: #0180F0; 
-        }
-
         section{
             padding: 2% 0 3% 2%;
             background: #0057A3;
@@ -66,7 +37,6 @@
             font-size: 20px;
             margin-bottom: 30px;
         }
-
 
         .hospedagem {
             padding: 1% 0 3% 2%;
@@ -249,61 +219,43 @@
 
 
         @media only screen and (max-width: 600px) {
-        header {
-            padding: 50px;
-        }
-
-        nav {
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            flex: 1;
-            margin: 5px;
-        }
 
         .section {
             flex-direction: column;
         }
-        
-        .hospedagem h2{
-            max-width: 50%;
-            max-width: 25%;
+        header {
+            flex-direction: column;
+            align-items: center;
         }
-
+    
         .hospedagem {
-            max-width: 100%;
+            margin: 0;
         }
-
+    
+        .hospedagem h2 {
+            font-size: 20px;
+        }
+    
         .destino select,
         .datas input,
         .quartos select {
-            width: 50%;
+            width: 100%;
         }
-    }
+        }
+        .footer-box {
+            width: 100%;
+            float: none;
+        }
+    
+        .company-footer,
+        .articles-footer {
+            width: 100%;
+        }   
     </style>
 </head>
 <body>
     <header>
     </header>
-    <nav>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-plane"></i>
-            Passagens
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-bed"></i>
-            Hospedagens
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-tags"></i>
-            Promoções
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-suitcase"></i>
-            Pacotes
-        </a>
-    </nav>
     <main>
         <section>
             <div class="hospedagem">
