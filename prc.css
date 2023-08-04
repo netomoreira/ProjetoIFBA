@@ -112,10 +112,10 @@ section h1{
 }
 
 .origem{
-    display: inline;
+    background-color: white;
     margin-left: 0px;
     height: 60px;
-    width: 140px;
+    width: 200px;
     border-radius: 6px 0px 0px 6px;
     outline: none;
     padding: 0px 15px;
@@ -127,10 +127,10 @@ section h1{
 }
 
 .destino{
-    display: inline;
-    margin-left: -5px;
+    background-color: white;
+    margin-left: 0px;
     height: 60px;
-    width: 140px;
+    width: 200px;
     border-radius: 0px 6px 6px 0px;
     outline: none;
     border-left: solid 1px black;
@@ -143,7 +143,6 @@ section h1{
 }
 
 .datai{
-    display: inline;
     margin-left: 7px;
     height: 60px;
     width: 160px;
@@ -156,7 +155,6 @@ section h1{
 }
 
 .datav{
-    display: inline;
     margin-left: -5px;
     height: 60px;
     width: 160px;
@@ -169,10 +167,10 @@ section h1{
 }
 
 .pass{
-    display: inline;
+    background-color: white;
     margin-left: 7px;
     height: 60px;
-    width: 140px;
+    width: 200px;
     border-radius: 6px;
     outline: none;
     border-left: solid 1px black;
@@ -185,7 +183,6 @@ section h1{
 }
 
 .botao{
-    display: inline;
     margin-left: 9px;
     height: 60px;
     width: 110px;
