@@ -87,7 +87,7 @@ nav a:hover i {
 
 section{
     margin: 0 11%;
-    padding: 1% 0% 3% 2%;
+    padding: 30px;
     background: var(--cor1);
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(68,68,68,0.2);
@@ -95,6 +95,7 @@ section{
 
 .check h1{
     display: inline;
+    margin-left: 55px;
     color: white;
     font-size: 20px;
     margin-bottom: 30px;
@@ -133,7 +134,8 @@ section{
 }
 
 .origem{
-    display: inline;
+    background-color: white;
+    display: inline-flex;
     margin-left: 0px;
     height: 60px;
     width: 140px;
@@ -147,9 +149,17 @@ section{
     text-overflow: ellipsis;
 }
 
+.origem > #ori{
+    outline: none;
+    border: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .destino{
-    display: inline;
-    margin-left: -5px;
+    background-color: white;
+    display: inline-flex;
     height: 60px;
     width: 140px;
     border-radius: 0px 6px 6px 0px;
@@ -163,34 +173,62 @@ section{
     text-overflow: ellipsis;
 }
 
+.destino > #des{
+    outline: none;
+    border: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .datai{
-    display: inline;
+    background-color: white;
+    display: inline-flex;
     margin-left: 7px;
     height: 60px;
-    width: 160px;
+    width: 140px;
     border-radius: 6px 0px 0px 6px;
     outline: none;
     padding-left: 15px;
     font-size: 1em;
     padding: 0px 15px;
     border: 1px solid #ccc;
+    justify-content: center;
+}
+
+.datai > #dataida{
+    outline: none;
+    border: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .datav{
-    display: inline;
-    margin-left: -5px;
+    background-color: white;
+    display: inline-flex;
     height: 60px;
-    width: 160px;
+    width: 140px;
     border-radius: 0px 6px 6px 0px;
     outline: none;
     border-left: solid 1px black;
     padding: 0px 15px;
     font-size: 1em;
     border: 1px solid #ccc;
+    justify-content: center;
+}
+
+.datav > #datavol{
+    outline: none;
+    border: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .pass{
-    display: inline;
+    background-color: white;
+    display: inline-flex;
     margin-left: 7px;
     height: 60px;
     width: 140px;
@@ -200,6 +238,14 @@ section{
     padding: 0px 15px;
     font-size: 1em;
     border: 1px solid #ccc;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.pass > #passagem{
+    outline: none;
+    border: none;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

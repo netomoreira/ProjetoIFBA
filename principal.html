@@ -57,18 +57,33 @@
                 <label for="somenteida" id="sida">Somente ida</label>
             </div>
             <div class="inputs">
-                    <input type="text" class="origem" placeholder="Cidade de origem" list="lista-cidades">
+                    <div class="origem">
+                        <input type="text" id="ori" placeholder="Qual a sua origem?" list="lista-cidades">
+                    </div>
                     <datalist id="lista-cidades">
                         <option value="Curitiba, Paraná, Brasil">
                         <option value="Salvador, Bahia, Brasil">
                         <option value="Florianópolis, Santa Catarina, Brasil">
                         <option value="Londrina, Paraná, Brasil">
                     </datalist>
-                    <input type="text" class="destino"placeholder="Cidade de destino" list="lista-cidades">
-                    <input type="date" class="datai" placeholder="Data de ida">
-                    <input type="date" class="datav" placeholder="Data de volta">
-                    <input type="text" class="pass" placeholder="Passageiros e classes">
+                    <div class="destino">
+                        <input type="text" id="des" placeholder="Qual o seu destino?" list="lista-cidades">
+                    </div>
+                    <div class="datai">
+                        <input type="date" id="dataida" placeholder="Data de ida">
+                    </div>
+                    <div class="datav">
+                        <input type="date" id="datavol" placeholder="Data de volta">
+                    </div>
+                    <div class="pass">
+                        <input type="text" id="passagem" placeholder="Passageiros e classes"
+                        list="lista-passagens">
+                    </div>
                     <input type="button" class="botao" value="Pesquisar">
+                    <datalist id="lista-passagens">
+                        <option value="Econômica">
+                        <option value="Primeira Classe">
+                    </datalist>
             </div>
         </section>
     </main>
