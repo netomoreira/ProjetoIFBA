@@ -5,7 +5,7 @@
     --cor1: #0455BF;
     --cor2: #056CF2;
     --cor3: #0439D9;
-    --cor4: #010626;
+    --cor4: #3c8bf3;
 }
 
 *{
@@ -93,12 +93,20 @@ section{
     box-shadow: 0px 4px 8px rgba(68,68,68,0.2);
 }
 
-section h1{
+.check h1{
     display: inline;
     color: white;
     font-size: 20px;
     margin-bottom: 30px;
 }
+
+.check label{
+    font-weight: bold;
+    display: inline;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 30px; 
+} 
 
 .check input{
     display: inline;
