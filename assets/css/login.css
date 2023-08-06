@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #2740d1;
+    background: rgb(32, 117, 214);
 }
 
 .container {
@@ -29,7 +29,7 @@ body {
     align-items: center;
     background-color: rgb(107, 207, 253);
     padding: 1rem;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 .form-img img{
@@ -43,5 +43,96 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: white;
-    border-radius: 4px;
+    border-radius: 5px;
+    padding: 3rem;
 }
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #2740d1;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover{
+    background-color:  rgb(107, 207, 253);
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #2740d1;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 0.6rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover {
+    background-color: rgb(51, 48, 48);
+}
+
+.input-box input:hover {
+    outline: 1px solid  #2740d1;
+}
+
+.input-box label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: black;
+}
+
+.continue-button button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #2740d1;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color:  rgb(107, 207, 253);
+}
+
