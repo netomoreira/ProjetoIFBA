@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
 
 :root{
     --cor0: #F2F2F2;
@@ -65,7 +65,7 @@ nav > li{
 }
 
 nav a {
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     padding: 10px;
     text-decoration: none;
@@ -86,37 +86,56 @@ nav a:hover i {
     color: var(--cor2); 
 }
 
-
 .container{
+    width: 100%;
+    height: 300px;
+    background-color: var(--cor2);
+}
+.container2{
+    position: absolute;
+    margin: 30px;
     display: flex;
     flex-wrap: wrap;
-    padding: 50px;
+    height: 200px;
     font-size: 20px;
     background: var(--cor1);
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(68,68,68,0.2);
 }
 .radio{
+    margin: 0 200px;
     display: flex;
-    color: white;
-    font-weight: bold;
-    margin-bottom: 40px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:  flex-end;
+    align-self:  flex-end;
+}
+input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .check{
-    margin-left: 20px;
-    font-size: 18px;
+
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-weight: bold;
 }
 
-#sida{
+#somenteida{
     margin-left: 10px;
 }
 
 .inputs{
-    margin-top: 10px;    
+    width: 100%;
+    flex-wrap: wrap;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    align-self: center;
     gap: 7px;
 }
 
@@ -206,11 +225,6 @@ nav a:hover i {
     background-color: var(--cor4);
 }
 
-main{
-    background: var(--cor2);
-    padding: 30px 300px;
-    margin: 0px;
-}
 @media screen and (max-width: 1050px) {
 
 nav {

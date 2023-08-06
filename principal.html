@@ -47,34 +47,36 @@
     </nav>
     <main>
         <div class="container">
-            <div class="radio">
-                <h4>Passagens aéreas</h4>
-                <div class="check">
-                    <label for="idaevol" id="lida">Ida e Volta</label>
-                    <input type="radio" id="idaevol" name="tipoPassagem" value="idaevol"/ checked>
-                    <label for="somenteida" id="sida">Somente ida</label>
-                    <input type="radio" id="somenteida" name="tipoPassagem" value="somenteida" />
+            <div class="container2">
+                <div class="radio">
+                    <h4>Passagens aéreas</h4>
+                    <div class="check">
+                        <input type="radio" id="idaevol" name="tipoPassagem" value="idaevol" checked>
+                        <label for="idaevol" id="lida">Ida e Volta</label>
+                        <input type="radio" id="somenteida" name="tipoPassagem" value="somenteida" />
+                        <label for="somenteida" id="sida">Somente ida</label>
+                    </div>
                 </div>
-            </div>
-            <div class="inputs">
-                <input type="text" class="origem" list="cidades" placeholder="Qual a sua origem?">
-                    <datalist id="cidades">
-                        <option>Cidade de Origem</option>
-                        <option> Curitiba, Paraná, Brasil</option>
-                        <option> Salvador, Bahia, Brasil</option>
-                        <option> Florianópolis, Santa Catarina, Brasil</option>
-                        <option> Londrina, Paraná, Brasil</option>
-                    </datalist>
-                </select>
-                <input type="text" class="destino" list="cidades" placeholder="Qual o seu destino?">
-                <input type="date" class="datai" placeholder="Data de ida">
-                <input type="date" class="datav" placeholder="Data de volta">
-                <select class="pass">
-                    <option value="0">Escolha sua passagem</option>
-                    <option value="1">Ecônomica</option>
-                    <option value="2">Primeira Classe</option>
-                </select>
-                <input type="button" class="botao" value="Pesquisar">
+                <div class="inputs">
+                    <input type="text" class="origem" list="cidades" placeholder="Qual a sua origem?">
+                        <datalist id="cidades">
+                            <option>Cidade de Origem</option>
+                            <option> Curitiba, Paraná, Brasil</option>
+                            <option> Salvador, Bahia, Brasil</option>
+                            <option> Florianópolis, Santa Catarina, Brasil</option>
+                            <option> Londrina, Paraná, Brasil</option>
+                        </datalist>
+                    </select>
+                    <input type="text" class="destino" list="cidades" placeholder="Qual o seu destino?">
+                    <input type="date" class="datai" placeholder="Data de ida">
+                    <input type="date" class="datav" placeholder="Data de volta">
+                    <select class="pass">
+                        <option value="0">Escolha sua passagem</option>
+                        <option value="1">Ecônomica</option>
+                        <option value="2">Primeira Classe</option>
+                    </select>
+                    <input type="button" class="botao" value="Pesquisar">
+                </div>
             </div>
         </div>
     </main>
