@@ -205,6 +205,31 @@ nav a:hover i {
     padding: 10px;
 }
 
+.topBox{
+    padding: 0px 200px;
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+}
+
+.topBox > .card{
+    width: 100%;
+}
+
+.bottomBox{
+    padding: 0px 200px;
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+}
+
+.bottomBox > .card{
+    width: 100%;
+}
+.bottomBox > .card:hover{
+    transform: scale3d(1.1);
+}
+
 @media screen and (max-width: 1346px) {
     .inputs {
         width: 700px;
