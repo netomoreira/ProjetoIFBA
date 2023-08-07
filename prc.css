@@ -171,6 +171,18 @@ nav a:hover i {
     margin: 1px 3px;
 }
 
+main{
+    background-color: white;
+}
+
+main > .sessao{
+    margin: 0px 200px;
+}
+
+.title{
+    margin: 50px;
+    padding-top: 30px;
+}
 
 .content {
     width: 100%;
@@ -206,7 +218,6 @@ nav a:hover i {
 }
 
 .topBox{
-    padding: 0px 200px;
     justify-content: center;
     display: flex;
     width: 100vw;
@@ -216,8 +227,11 @@ nav a:hover i {
     width: 100%;
 }
 
+.topBox > .card:hover{
+    transform: scale3d(1.03, 1.03, 1);
+}
+
 .bottomBox{
-    padding: 0px 200px;
     justify-content: center;
     display: flex;
     width: 100vw;
@@ -226,8 +240,9 @@ nav a:hover i {
 .bottomBox > .card{
     width: 100%;
 }
+
 .bottomBox > .card:hover{
-    transform: scale3d(1.1);
+    transform: scale3d(1.03, 1.03, 1);
 }
 
 @media screen and (max-width: 1346px) {
