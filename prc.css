@@ -202,9 +202,33 @@ main > .sessao{
     transition: 0.3s;
 }
 
-.mediaCard{
+.mediaCard-1{
     background: url(imagens/arranha-ceus-ao-por-do-sol.jpg) center/cover;
-    height: 300px;
+    height: 300px;  
+    width: 100%;
+}
+
+.mediaCard-2{
+    background: url(imagens/arranha-ceus-ao-por-do-sol.jpg) center/cover;
+    height: 300px;  
+    width: 100%;
+}
+
+.mediaCard-3{
+    background: url(imagens/arranha-ceus-ao-por-do-sol.jpg) center/cover;
+    height: 300px;  
+    width: 100%;
+}
+
+.mediaCard-4{
+    background: url(imagens/arranha-ceus-ao-por-do-sol.jpg) center/cover;
+    height: 300px;  
+    width: 100%;
+}
+
+.mediaCard-5{
+    background: url(imagens/arranha-ceus-ao-por-do-sol.jpg) center/cover;
+    height: 300px;  
     width: 100%;
 }
 
