@@ -50,11 +50,15 @@
     <main>
         <section>
             <div class="check">
-                <h1>Passagens aéreas</h1>
-                <input type="radio" id="idaevol" name="tipoPassagem" value="idaevol" checked>
-                <label for="idaevol" id="lida">Ida e Volta</label>
-                <input type="radio" id="somenteida" name="tipoPassagem" value="somenteida" />
-                <label for="somenteida" id="sida">Somente ida</label>
+                <div class="titulo">
+                    <h1>Passagens aéreas</h1>
+                </div>
+                <div class="ipt">
+                    <input type="radio" id="idaevol" name="tipoPassagem" value="idaevol" checked>
+                    <label for="idaevol" id="lida">Ida e Volta</label>
+                    <input type="radio" id="somenteida" name="tipoPassagem" value="somenteida" />
+                    <label for="somenteida" id="sida">Somente ida</label>
+                </div>
             </div>
             <div class="inputs">
                     <div class="origem">
@@ -79,7 +83,7 @@
                         <input type="text" id="passagem" placeholder="Passageiros e classes"
                         list="lista-passagens">
                     </div>
-                    <input type="button" class="botao" value="Pesquisar">
+                    <input id="botao" type="button" value="Pesquisar">
                     <datalist id="lista-passagens">
                         <option value="Econômica">
                         <option value="Primeira Classe">
