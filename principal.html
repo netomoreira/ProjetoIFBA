@@ -17,7 +17,7 @@
                     <div class="user-icon">
                         <li>
                             <a href="#" target="_blank">
-                                <i class="fa-regular fa-user" style="color: #ffffff;"></i>
+                                <i class="fa-solid fa-user" style="color: var(--cor5);"></i>
                             Iniciar Sessão
                             </a>
                         </li>
@@ -27,7 +27,7 @@
                     <div class="viagem-icon">
                         <li>
                             <a href="#" target="_blank">
-                                <i class="fa-solid fa-suitcase" style="color: #ffffff;"></i>
+                                <i class="fa-solid fa-suitcase" style="color: var(--cor5);"></i>
                                 Minhas Viagens
                             </a>
                         </li>
@@ -37,7 +37,7 @@
                     <div class="ajuda-icon">
                         <li>
                             <a href="#" target="_blank">
-                                <i class="fa-regular fa-circle-question" style="color: #ffffff;"></i>
+                                <i class="fa-solid fa-circle-question" style="color: var(--cor5);"></i>
                                 Ajuda
                             </a>
                         </li>
@@ -47,134 +47,153 @@
         </div>
     </header>
     <nav>
-        <li>
-            <a href="#" target="_blank" rel="noopener noreferrer" class="icon1">
-                <i class="fas fa-plane"></i>
-                Passagens
-            </a>
-            <a href="#" class="icon2"><i class="fas fa-plane"></i></a>
-        </li>
-        <li>
-            <a href="#" target="_blank" rel="noopener noreferrer" class="icon1">
-                <i class="fas fa-bed"></i>
-                Hospedagens
-            </a>
-            <a href="#" class="icon2"><i class="fas fa-bed"></i></a>
-        </li>
-        <li>
-            <a href="#" target="_blank" rel="noopener noreferrer" class="icon1">
-                <i class="fas fa-tags"></i>
-                Promoções
-            </a>
-            <a href="#" class="icon2"><i class="fas fa-tags"></i></a>
-        </li>
+        <div class="icon-aviao">
+            <li>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="icon1">
+                    <i class="fas fa-plane"></i>
+                    Passagens
+                    <span class="underline"></span>
+                </a>
+            </li>
+        </div>
+        <div class="icon-cama">
+            <li>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="icon1">
+                    <i id="bed" class="fas fa-bed"></i>
+                    Hospedagens
+                    <span class="underline"></span>
+                </a>
+            </li>
+        </div>
+        <div class="icon-promo">
+            <li>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="icon1">
+                    <i id="promo" class="fas fa-tags"></i>
+                    Promoções
+                    <span class="underline"></span>
+                </a>
+            </li>
+        </div>
         <li class="dropdown">
-            <a href="#" target="_blank" rel="noopener noreferrer" class="icon1">
-                <i class="fas fa-suitcase"></i>
-                Pacotes
-            </a>
-            <a href="#" class="icon2"><i class="fas fa-suitcase"></i></a>
+            <div class="icon-pacotes">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="icon1">
+                    <i id="paco" class="fas fa-suitcase"></i>
+                    Pacotes
+                    <span class="underline"></span>
+                </a>
+            </div>
             <div class="dropdown-content">
                 <a href="#" target="_blank" rel="noopener noreferrer">Nacional</a>
                 <a href="#" target="_blank" rel="noopener noreferrer">Internacional</a>
             </div>
         </li>
     </nav>
-    <div class="container">
-        <div class="container-2">
-            <div class="check">
-                <div class="titulo">
-                    <h1>Passagens aéreas</h1>
-                </div>
-                <div class="ipt">
-                    <input type="radio" id="idaevol" name="tipoPassagem" value="idaevol" checked>
-                    <label for="idaevol" id="lida">Ida e Volta</label>
-                    <input type="radio" id="somenteida" name="tipoPassagem" value="somenteida" />
-                    <label for="somenteida" id="sida">Somente ida</label>
-                </div>
+    
+<div class="container">
+    <div class="container-2">
+        <div class="check">
+            <div class="titulo">
+                <h1>Passagens aéreas</h1>
             </div>
-            <div class="inputs">
-                    <div class="origem">
-                        <input type="text" id="ori" placeholder="Qual a sua origem?" list="lista-cidades">
-                    </div>
-                    <datalist id="lista-cidades">
-                        <option value="Curitiba, Paraná, Brasil">
-                        <option value="Salvador, Bahia, Brasil">
-                        <option value="Florianópolis, Santa Catarina, Brasil">
-                        <option value="Londrina, Paraná, Brasil">
-                    </datalist>
-                    <div class="destino">
-                        <input type="text" id="des" placeholder="Qual o seu destino?" list="lista-cidades">
-                    </div>
-                    <div class="datai">
-                        <div class="topDatai"><span>Data de ida</span></div>
-                        <input type="date" id="dataida" placeholder="Data de ida">
-                    </div>
-                    <div class="datav">
-                        <div class="topDatav"><span>Data de volta</span></div>
-                        <input type="date" id="datavol" placeholder="Data de volta">
-                    </div>
-                    <div class="pass">
-                        <input type="text" id="passagem" placeholder="Passageiros e classes"
-                        list="lista-passagens">
-                    </div>
-                    <input id="botao" type="button" value="Pesquisar">
-                    <datalist id="lista-passagens">
-                        <option value="Econômica">
-                        <option value="Primeira Classe">
-                    </datalist>
+            <div class="ipt">
+                <input type="radio" id="idaevol" name="tipoPassagem" value="idaevol" checked>
+                <label for="idaevol" id="lida">Ida e Volta</label>
+                <input type="radio" id="somenteida" name="tipoPassagem" value="somenteida" />
+                <label for="somenteida" id="sida">Somente ida</label>
             </div>
         </div>
+        <div class="inputs">
+                <div class="origem">
+                    <div class="topOrigem">
+                        <span>ORIGEM</span>
+                    </div>
+                    <input type="text" id="ori" placeholder="Qual a sua origem?" list="lista-cidades">
+                </div>
+                <datalist id="lista-cidades">
+                    <option value="Curitiba, Paraná, Brasil">
+                    <option value="Salvador, Bahia, Brasil">
+                    <option value="Florianópolis, Santa Catarina, Brasil">
+                    <option value="Londrina, Paraná, Brasil">
+                </datalist>
+                <div class="destino">
+                    <div class="topDestino">
+                        <span>DESTINO</span>
+                    </div>
+                    <input type="text" id="des" placeholder="Qual o seu destino?" list="lista-cidades">
+                </div>
+                <div class="datai">
+                    <div class="topDatai"><span>DATA DE IDA</span></div>
+                    <input type="date" id="dataida" placeholder="Data de ida">
+                </div>
+                <div class="datav">
+                    <div class="topDatav"><span>DATA DE VOLTA</span></div>
+                    <input type="date" id="datavol" placeholder="Data de volta">
+                </div>
+                <div class="pass">
+                    <div class="topPass">
+                        <span>CLASSE</span>
+                    </div>
+                    <input type="text" id="passagem" placeholder="Passageiros e classes"
+                    list="lista-passagens">
+                </div>
+                <input id="botao" type="button" value="Pesquisar">
+                <datalist id="lista-passagens">
+                    <option value="Econômica">
+                    <option value="Primeira Classe">
+                </datalist>
+        </div>
     </div>
-    <main>
-        <section class="sessao">
-            <div class="topSection">
-                <h2 class="title">Lugares mais buscados do Brasil</h2>
-            </div>
-            <div class="content">
-                <div class="topBox">
-                    <div class="card">
-                        <div class="mediaCard-1"></div>
-                        <div class="bottomCard">
-                            <h4 class="tittle">Curitiba</h4>
-                            <span class="bottomText">A partir de 115,49</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="mediaCard-2"></div>
-                        <div class="bottomCard">
-                            <h4 class="tittle">Salvador</h4>
-                            <span class="bottomText">A partir de 115,49</span>
-                        </div>
-                    </div>
-                </div>
+</div>
 
-                <div class="bottomBox">
-                    <div class="card">
-                        <div class="mediaCard-3"></div>
-                        <div class="bottomCard">
-                            <h4 class="tittle">Curitiba</h4>
-                            <span class="bottomText">A partir de 115,49</span>
-                        </div>
+<main>
+    <section class="sessao">
+        <div class="topSection">
+            <h2 class="title">Lugares mais buscados do Brasil</h2>
+        </div>
+        <div class="content">
+            <div class="topBox">
+                <div class="card">
+                    <div class="mediaCard-1"></div>
+                    <div class="bottomCard">
+                        <h4 class="tittle">Curitiba</h4>
+                        <span class="bottomText">A partir de 115,49</span>
                     </div>
-                    <div class="card">
-                        <div class="mediaCard-4"></div>
-                        <div class="bottomCard">
-                            <h4 class="tittle">Curitiba</h4>
-                            <span class="bottomText">A partir de 115,49</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="mediaCard-5"></div>
-                        <div class="bottomCard">
-                            <h4 class="tittle">Curitiba</h4>
-                            <span class="bottomText">A partir de 115,49</span>
-                        </div>
+                </div>
+                <div class="card">
+                    <div class="mediaCard-2"></div>
+                    <div class="bottomCard">
+                        <h4 class="tittle">Salvador</h4>
+                        <span class="bottomText">A partir de 115,49</span>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+
+            <div class="bottomBox">
+                <div class="card">
+                    <div class="mediaCard-3"></div>
+                    <div class="bottomCard">
+                        <h4 class="tittle">Curitiba</h4>
+                        <span class="bottomText">A partir de 115,49</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="mediaCard-4"></div>
+                    <div class="bottomCard">
+                        <h4 class="tittle">Curitiba</h4>
+                        <span class="bottomText">A partir de 115,49</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="mediaCard-5"></div>
+                    <div class="bottomCard">
+                        <h4 class="tittle">Curitiba</h4>
+                        <span class="bottomText">A partir de 115,49</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
     <footer>
 
