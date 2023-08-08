@@ -28,10 +28,35 @@ header {
 header > .retangulo{
     background-color: var(--cor1);
     margin-left: 50%;
-    width: 25%;
-    height: 40%;
-    padding: 2px;
+    width: 30%;
+    height: 50%;
     border-radius: 0px 0px 0px 30px;
+}
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7px 10px;
+}
+
+.infos > .user, .viagens, .ajuda{
+    color: white;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.infos li, a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.infos:hover{
+    color: #056CF2;
 }
 
 .dropdown {
