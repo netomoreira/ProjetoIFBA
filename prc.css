@@ -171,6 +171,26 @@ nav a:hover i {
     margin: 1px 3px;
 }
 
+.datai{
+    display: flex;
+    flex-direction: column;
+}
+
+.topDatai > span{
+    font-size: 10px;
+    opacity: 70%;
+}
+
+.datav{
+    display: flex;
+    flex-direction: column;
+}
+
+.topDatav > span{
+    font-size: 10px;
+    opacity: 70%;
+}
+
 main{
     background-color: white;
 }
