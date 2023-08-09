@@ -15,12 +15,19 @@
             --cor3: #0439D9;
             --cor4: #3c8bf3;
             --cor5: #010626;
+            --color-neutral-0: #0e0c0c;
+            --color-neutral-10: #171717;
+            --color-neutral-30: #a8a29e;
+            --color-neutral-40: #f5f5f5;
         }
 
         *{
             font-family: 'Rubik', sans-serif;
             margin: 0px;
             padding: 0px;
+        }
+        main{
+            height: 80vh;
         }
 
         header{
@@ -197,117 +204,130 @@
     
         /* footer */
 
-        footer{
-            background-color: #0057A3;
-            padding-top: 5em;
-            padding-bottom: 40px;
-            border-top: 5px solid;
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Espaço igual entre as colunas */
+        footer {
+            width: 100%;
+            color: var(--color-neutral-40);
         }
-        footer h2, 
-        footer p,
-        footer a,
-        footer span{
-            color: #ffffff;
-        }
-        footer h2{
-            font-weight: 400;
-        }
-        footer a{
+
+        .footer-link {
             text-decoration: none;
         }
-        footer ul{
-            padding: 0;
+
+        #footer_content {
+            background-color: var(--color-neutral-10);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 3rem 3.5rem;
         }
-        footer li{
+
+        #footer_contacts h1 {
+            margin-bottom: 0.75rem;
+        }
+
+        #footer_social_media {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        } 
+
+        #footer_social_media .footer-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 2.5rem;
+            width: 2.5rem;
+            color: var(--color-neutral-40);
+            border-radius: 50%;
+            transition: all 0.4s;
+        }
+
+        #footer_social_media .footer-link i {
+            font-size: 1.25rem;    
+        }
+
+        #footer_social_media .footer-link:hover {
+            opacity: 0.8;
+        }
+
+        #instagram {
+            background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+        }
+
+        #facebook {
+            background-color: #4267b3;
+        }
+
+        #whatsapp {
+            background-color: #25d366;
+        }
+
+        .footer-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
             list-style: none;
         }
-        .footer-box{
-            width: calc(31% - 20px);
-            margin: 10px; 
-            box-sizing: border-box; 
-            float: none;
+
+        .footer-list .footer-link {
+            color: var(--color-neutral-30);
+            transition: all 0.4s;
         }
-        footer .wrapper {
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: center; 
-            align-items: flex-start; 
+
+        .footer-list .footer-link:hover {
+            color: #7f37c9;
+        }
+
+        #footer_subscribe {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        #footer_subscribe p {
+            color: var(--color-neutral-30);
+        }
+
+        #input_group {
+            display: flex;
+            align-items: center;
+            background-color: var(--color-neutral-0);
+            border-radius: 4px;
+        }
+
+        #input_group input {
+            all: unset;
+            padding: 0.75rem;
             width: 100%;
-            margin-top: 20px; 
-        }
-        footer .wrapper:after{
-            clear: both;
-            content: "";
-            display: block;
-        }
-        .company-footer{
-            width: 80%;
-        }
-        .company-footer h2{
-            margin-top: 20px;
-        }
-        .company-footer h2, .company-footer p{
-            margin-bottom: 20px;
-        }
-        .company-footer h2, .company-footer p, .articles-footer h2 {
-            margin-top: 0;
-        }
-        .footer-list li{
-            margin-bottom: 15px;
-        }
-        .footer-list a{
-            transition: .5s;
-        }
-        .footer-list a:hover{
-            color: #696969da;
-        }
-        .footer-list li:after{
-            clear:both;
-            content:"";
-            display: block;
-        }
-        .articles-footer{
-            width: 80%;
-            line-height: 30px;
-        }
-        .footer-list.footer-article-list span{
-            display: block;
-            float: none;
         }
 
-        .footer-list .fab{
-            font-size: 30px;
-            margin-right: 10px;
-            float: left;
+        #input_group button {
+            background-color: #7f37c9;
+            border: none;
+            color: var(--color-neutral-40);
+            padding: 0px 1.25rem;
+            font-size: 1.125rem;
+            height: 100%;
+            border-radius: 0px 4px 4px 0px;
+            cursor: pointer;
+            transition: all 0.4s;
         }
 
-        .footer-list li span{
-            float: left;
-            height: 30px;
-            line-height: 30px;
-            
+        #input_group button:hover {
+            opacity: 0.8;
         }
-        .footer-bottom {
-            background-color: #0057A3;
-            border-top: 1px solid #b2b2b2;
-            width: 100%;
-            overflow: hidden;
-            text-align: center;
-            padding: 20px 0;
-            color: #ffffff;
-        }
-        .footer-bottom p{
-            font-weight: 600;
-            margin: 20px 0; /* Espaçamento superior e inferior */
-            padding: 0 10px; /* Espaçamento lateral */
-            color: #ffffff;
+
+        #footer_copyright {
+            display: flex;
+            justify-content: center;
+            background-color: var(--color-neutral-0);
+            font-size: 0.9rem;
+            padding: 1.5rem;
+            font-weight: 100;
         }
 
 
-        @media only screen and (max-width: 600px) {
+
+        @media only screen and (max-width: 760px) {
 
         .section {
             flex-direction: column;
@@ -332,16 +352,19 @@
             display: block;
         }
 
+        .footer_content{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+
         }
-        .footer-box {
-            width: 100%;
-            float: none;
+    }
+    @media only screen and (max-width: 760px) {
+        .footer_content{
+            grid-template-columns: repeat(1, 1fr);
+            padding: 3rem 2rem;
+
         }
-    
-        .company-footer,
-        .articles-footer {
-            width: 100%;
-        }   
+    }
     </style>
 </head>
 <body>
@@ -421,60 +444,75 @@
     </section>
 </main>
 <footer>
-    <div class="wrapper">
-        <div class="footer-box">
-            <div class="company-footer">
-                <h2>Projeto IFBA - AEROGIN</h2>
-                <p>Viaje com a melhor agência aérea do mundo!</p>
-            </div>    
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1>AeroGIN</h1>
+            <p>Melhor agência de passagens e hospedagens para você.</p>
+
+            <div id="footer_social_media">
+                <a href="#" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
         </div>
-        <div class="footer-box">
-            <div class="articles-footer">
-                <h2>Sobre a empresa:</h2>
-                <ul class="footer-list footer-article-list">
-                    <li>
-                        <a href="#"></a>
-                        <span class="article-item">Site de compra de passagens segura!</span>
-                    </li>
-                    <li>
-                        <a href="#"></a>
-                        <span class="article-item">Para um melhor conforto.</span>
-                    </li>
-                    <li>
-                        <a href="#"></a>
-                        <span class="article-item">Hospedagens, viagens e mais um pouco você encontra aqui!</span>
-                    </li>
-                </ul>
-            </div> 
-        </div>
-        <div class="footer-box">
-            <h2>REDES SOCIAIS!</h2>
-            <ul class="footer-list">
-                <li>
-                    <a href="#">
-                        <i class="fab fa-facebook-square"></i>
-                        <span>Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                        <span>Twitter</span>
-                    </a>
-                </li> 
-            </ul>
+        
+        <ul class="footer-list">
+            <li>
+                <h3>Sobre:</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Melhores Hospedagens...</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Passagens mais baratas..</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Muito mais conforto!</a>
+            </li>
+        </ul>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Alunos</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Ícaro Raphael</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Manoel Moreira Neto</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Geovanna Mâcedo</a>
+            </li>
+        </ul>
+
+        <div id="footer_subscribe">
+            <h3>Contato</h3>
+
+            <p>
+                Coloque seu e-mail logo abaixo, para entrarmos em contato!
+            </p>
+
+            <div id="input_group">
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
         </div>
     </div>
-    <div class="footer-bottom">
-        <div class="wrapper">
-            <p>Alunos: Ícaro, Neto e Geovanna</p>
-        </div>
+
+    <div id="footer_copyright">
+        &#169
+        2023 Todos direitos reservados
     </div>
 </footer>
 </body>
