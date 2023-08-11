@@ -5,107 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pacotes Nacionais</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: #ffffff;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container {
-            width: 100%;
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-        }
-
-            /* Card */
-        .card {
-            width: 300px;
-            height: 460px;
-            margin: 25px;
-            background-color: #fff;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-            transition: 0.3s;
-        }
-
-            /* Card Header*/
-        .card-header {
-            width: 100%;
-            height: 200px;
-            overflow: hidden;
-        }
-
-        .card-img {
-            min-width: 100%;
-            width: auto;
-            height: 100%;
-        }
-
-            /* Card Body */
-        .card-body {
-            height: 170px;
-            padding: 15px;
-            text-align: center;
-            font-family: sans-serif;
-        }
-
-        .card-local {
-            font-size: 16px;
-            margin: 10px 0;
-        }
-
-        .card-titulo {
-            font-size: 32px;
-            margin: 15px 0;
-        }
-
-        .card-texto {
-            font-size: 12px;
-            width: 250px;
-            margin: 0 auto;
-        }
-
-            /* Card Footer */
-        .card-footer {
-            margin-top: 10px;
-            text-align: center;
-            background-color: #000;
-        }
-
-        .card-footer a {
-            color: #fff;
-            display: block;
-            padding: 16px;
-            text-decoration: none;
-            font-family: sans-serif;
-            font-weight: 600;
-        }
-
-            /* Cores Cards */
-        .card-footer {
-            background-color: #2740d1;
-        }
-
-        .card-local {
-            color: #2740d1;
-        }
-            /* Animação Hover */
-        .card:hover {
-            transform: scale3d(1.1, 1.1, 1);
-        }
-
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/naci.css"/>
 </head>
     <body>
         <header>
@@ -128,7 +29,7 @@
                     <div class="viagens">
                         <div class="viagem-icon">
                             <li>
-                                <a href="#" target="_blank">
+                                <a href="#" target="_self">
                                     <i class="fa-solid fa-suitcase" style="color: var(--cor5);"></i>
                                     Minhas Viagens
                                 </a>
@@ -151,8 +52,9 @@
         <nav>
             <div class="icon-aviao">
                 <li>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="icon1">
-                        <i class="fas fa-plane"></i>
+                    <a href="index.html
+                    " target="_self" rel="noopener noreferrer" class="icon1">
+                        <i id="viao" class="fas fa-plane"></i>
                         Passagens
                         <span class="underline"></span>
                     </a>
