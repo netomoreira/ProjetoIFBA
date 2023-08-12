@@ -18,20 +18,12 @@
             margin: 0px;
             padding: 0px;
         }
-        main{
-            height: 80vh;
-        }
 
-        header{
-            background-color: white;
-            width: 100%;
-            height: 70px;
-            display: flex;
-            justify-content: flex-end;
-        }
+        
         body{
             margin: 0px;
             background-color: var(--cor0);
+            min-height: 100vh;
 
         }
 
@@ -193,10 +185,83 @@
         .quartos select {
             cursor: pointer;
         }
+
+        /* section */
+
+        main{
+            background-color: white;
+        }
+        
+        main > .sessao{
+            margin: 0px 165px;
+        }
+        
+        .title{
+            margin: 50px;
+            padding-top: 30px;
+        }
+        
+        .container-card{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+        }
+
+        .card{
+            width: 300px;
+            margin: 25px;
+            background-color: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: scale3d(1.03, 1.03, 1);
+            
+        }
+
+        .imagem{
+            display: flex;
+            justify-content: center;
+        }
+
+        .hotel{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        .text-main{
+            text-align: center;
+            color: var(--color-neutral-0);
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .desc{
+            color: var(--color-neutral-0);
+            font-weight: 300;
+            text-align: left;
+            padding-top: 10px;
+            font-size: 15px;
+            padding-bottom: 15px;
+            padding-right: 15px;
+            padding-left: 5px;
+            vertical-align: baseline;
+            line-height: inherit;
+
+        }
+        
     
         /* footer */
 
         footer {
+            padding-top: 100px;
             width: 100%;
             color: var(--color-neutral-40);
         }
@@ -347,7 +412,69 @@
         #footer_content{
             grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
+        }
 
+        main {
+            background-color: white;
+        }
+        
+        main > .sessao {
+            margin: 0 20px; 
+        }
+        
+        .title {
+            margin: 30px 0; 
+            padding-top: 20px;
+        }
+        
+        .container-card {
+            width: 100%;
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+        }
+        
+        .card {
+            width: 90%; 
+            margin: 15px 0; 
+            background-color: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+            transition: 0.3s;
+        }
+        
+        .card:hover {
+            transform: scale3d(1.03, 1.03, 1);
+        }
+        
+        .imagem {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .hotel {
+            width: 120px; 
+            height: 120px; 
+            border-radius: 50%;
+            margin-top: 15px; 
+        }
+        
+        .text-main {
+            text-align: center;
+            color: var(--color-neutral-0);
+            font-weight: 600;
+            font-size: 14px; 
+            margin: 10px 0; 
+        }
+        
+        .desc {
+            color: var(--color-neutral-0);
+            font-weight: 300;
+            text-align: center; 
+            padding: 10px;
+            font-size: 14px; 
+            line-height: 1.4;
         }
     }
     @media only screen and (max-width: 426px) {
