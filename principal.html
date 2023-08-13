@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje com a melhor agência de viagens do mundo | GIN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="principal.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/LOGO AEROGIN.png" alt="nossa logo">
+            <span>AEROGIN</span>
+        </div>
+        <div class="retangulo">
+            <div class="infos">
+                <div class="user">
+                    <div class="user-icon">
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fa-solid fa-user" style="color: var(--cor5);"></i>
+                            Iniciar Sessão
+                            </a>
+                        </li>
+                    </div>
+                </div>
+                <div class="viagens">
+                    <div class="viagem-icon">
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fa-solid fa-suitcase" style="color: var(--cor5);"></i>
+                                Minhas Viagens
+                            </a>
+                        </li>
+                    </div>
+                </div>
+                <div class="ajuda">
+                    <div class="ajuda-icon">
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fa-solid fa-circle-question" style="color: var(--cor5);"></i>
+                                Ajuda
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="icon-aviao">
+            <li>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="icon1">
+                    <i class="fas fa-plane"></i>
+                    Passagens
+                    <span class="underline"></span>
+                </a>
+            </li>
+        </div>
+        <div class="icon-cama">
+            <li>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="icon1">
+                    <i id="bed" class="fas fa-bed"></i>
+                    Hospedagens
+                    <span class="underline"></span>
+                </a>
+            </li>
+        </div>
+        <div class="icon-promo">
+            <li>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="icon1">
+                    <i id="promo" class="fas fa-tags"></i>
+                    Promoções
+                    <span class="underline"></span>
+                </a>
+            </li>
+        </div>
+        <li class="dropdown">
+            <div class="icon-pacotes">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="icon1">
+                    <i id="paco" class="fas fa-suitcase"></i>
+                    Pacotes
+                    <span class="underline"></span>
+                </a>
+            </div>
+            <div class="dropdown-content">
+                <a href="#" target="_blank" rel="noopener noreferrer">Nacional</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Internacional</a>
+            </div>
+        </li>
+    </nav>
+    
+<div class="container">
+    <div class="container-2">
+        <div class="check">
+            <div class="titulo">
+                <h1>Passagens aéreas</h1>
+            </div>
+            <div class="ipt">
+                <input type="radio" id="idaevol" name="tipoPassagem" value="idaevol" checked>
+                <label for="idaevol" id="lida">Ida e Volta</label>
+                <input type="radio" id="somenteida" name="tipoPassagem" value="somenteida" />
+                <label for="somenteida" id="sida">Somente ida</label>
+            </div>
+        </div>
+        <div class="inputs">
+                <div class="origem">
+                    <div class="topOrigem">
+                        <span>ORIGEM</span>
+                    </div>
+                    <input type="text" id="ori" placeholder="Qual a sua origem?" list="lista-cidades">
+                </div>
+                <datalist id="lista-cidades">
+                    <option value="Curitiba, Paraná, Brasil">
+                    <option value="Salvador, Bahia, Brasil">
+                    <option value="Florianópolis, Santa Catarina, Brasil">
+                    <option value="Londrina, Paraná, Brasil">
+                </datalist>
+                <div class="destino">
+                    <div class="topDestino">
+                        <span>DESTINO</span>
+                    </div>
+                    <input type="text" id="des" placeholder="Qual o seu destino?" list="lista-cidades">
+                </div>
+                <div class="datai">
+                    <div class="topDatai"><span>DATA DE IDA</span></div>
+                    <input type="date" id="dataida" placeholder="Data de ida">
+                </div>
+                <div class="datav">
+                    <div class="topDatav"><span>DATA DE VOLTA</span></div>
+                    <input type="date" id="datavol" placeholder="Data de volta">
+                </div>
+                <div class="pass">
+                    <div class="topPass">
+                        <span>CLASSE</span>
+                    </div>
+                    <input type="text" id="passagem" placeholder="Passageiros e classes"
+                    list="lista-passagens">
+                </div>
+                <input id="botao" type="button" value="Pesquisar">
+                <datalist id="lista-passagens">
+                    <option value="Econômica">
+                    <option value="Primeira Classe">
+                </datalist>
+        </div>
+    </div>
+</div>
+
+<main>
+    <section class="sessao">
+        <div class="topSection">
+            <h2 class="title">Lugares mais buscados do Brasil</h2>
+        </div>
+        <div class="content">
+            <div class="topBox">
+                <div class="card">
+                    <div class="mediaCard-1"></div>
+                    <div class="bottomCard">
+                        <h4 class="tittle">Curitiba</h4>
+                        <span class="bottomText">A partir de 115,49</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="mediaCard-2"></div>
+                    <div class="bottomCard">
+                        <h4 class="tittle">Salvador</h4>
+                        <span class="bottomText">A partir de 115,49</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottomBox">
+                <div class="card">
+                    <div class="mediaCard-3"></div>
+                    <div class="bottomCard">
+                        <h4 class="tittle">Curitiba</h4>
+                        <span class="bottomText">A partir de 115,49</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="mediaCard-4"></div>
+                    <div class="bottomCard">
+                        <h4 class="tittle">Curitiba</h4>
+                        <span class="bottomText">A partir de 115,49</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="mediaCard-5"></div>
+                    <div class="bottomCard">
+                        <h4 class="tittle">Curitiba</h4>
+                        <span class="bottomText">A partir de 115,49</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1>AeroGIN</h1>
+            <p>Melhor agência de passagens e hospedagens para você.</p>
+            <div id="footer_social_media">
+                <a href="#" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="footer-link" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="footer-link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        
+        <ul class="footer-list">
+            <li>
+                <h3>Sobre:</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Melhores Hospedagens...</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Passagens mais baratas..</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Muito mais conforto!</a>
+            </li>
+        </ul>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Alunos</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Ícaro Raphael</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Manoel Moreira Neto</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Geovanna Mâcedo</a>
+            </li>
+        </ul>
+
+        <div id="footer_subscribe">
+            <h3>Contato</h3>
+
+            <p>
+                Coloque seu e-mail logo abaixo, para entrarmos em contato!
+            </p>
+
+            <div id="input_group">
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer_copyright">
+        &#169
+        2023 Todos direitos reservados
+    </div>
+</footer>
+</body>
+</html>
