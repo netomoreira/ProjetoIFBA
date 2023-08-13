@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagens</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/viagens.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+</head>
+  <header>
+    <div class="logo">
+        <img src="imagens/AERO.png" alt="nossa logo">
+    </div>
+    <div class="retangulo">
+        <div class="infos">
+            <div class="user">
+                <div class="user-icon">
+                    <li>
+                        <a href="telalogin.html" target="_self">
+                            <i class="fa-solid fa-user" style="color: var(--cor5);"></i>
+                        Iniciar Sessão
+                        </a>
+                    </li>
+                </div>
+            </div>
+            <div class="viagens">
+                <div class="viagem-icon">
+                    <li>
+                        <a href="#" target="_self">
+                            <i class="fa-solid fa-suitcase" style="color: var(--cor5);"></i>
+                            Minhas Viagens
+                        </a>
+                    </li>
+                </div>
+            </div>
+            <div class="ajuda">
+                <div class="ajuda-icon">
+                    <li>
+                        <a href="#" target="_self">
+                            <i class="fa-solid fa-circle-question" style="color: var(--cor5);"></i>
+                            Ajuda
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<nav>
+  <div class="icon-aviao">
+      <li>
+          <a href="principal.html" target="_self" rel="noopener noreferrer" class="icon1">
+              <i class="fas fa-plane"></i>
+              Passagens
+              <span class="underline"></span>
+          </a>
+      </li>
+  </div>
+  <div class="icon-cama">
+      <li>
+          <a href="hospedagem.html" target="_self" rel="noopener noreferrer" class="icon1">
+              <i id="bed" class="fas fa-bed"></i>
+              Hospedagens
+              <span class="underline"></span>
+          </a>
+      </li>
+  </div>
+  <div class="icon-promo">
+      <li>
+          <a href="#" target="_self" rel="noopener noreferrer" class="icon1">
+              <i id="promo" class="fas fa-tags"></i>
+              Promoções
+              <span class="underline"></span>
+          </a>
+      </li>
+  </div>
+  <li class="dropdown">
+      <div class="icon-pacotes">
+          <a href="#" target="_self" rel="noopener noreferrer" class="icon1">
+              <i id="paco" class="fas fa-suitcase"></i>
+              Pacotes
+              <span class="underline"></span>
+          </a>
+      </div>
+      <div class="dropdown-content">
+          <a href="nacional.html" target="_blank" rel="noopener noreferrer">Nacional</a>
+          <a href="internacional.html" target="_blank" rel="noopener noreferrer">Internacional</a>
+      </div>
+  </li>
+</nav>
+
+<body>
+        <main>
+          <div class="page-title">Viagens selecionadas</div>
+          <div class="content">
+            <section>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Passagens</th>
+                    <th>Valor</th>
+                    <th>Quantidade</th>
+                    <th>Total</th>
+                    <th>-</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="product">
+                        <img style="width: 120px; height: 120px;" src="assets/chicago.jpg" alt="" />
+                        <div class="info">
+                          <div class="name">Chicago</div>
+                          <div class="category">De 02 de Nov até 04 de Nov <br> São Paulo ✈ Chicago <br> + Hospedagem</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>R$ 9.821</td>
+                    <td>
+                      <div class="qty">
+                        <button><i class="bx bx-minus"></i></button>
+                        <span>1</span>
+                        <button><i class="bx bx-plus"></i></button>
+                      </div>
+                    </td>
+                    <td>R$ 9.821</td>
+                    <td>
+                      <button class="remove"><i class="bx bx-x"></i></button>
+                    </td>
+                    <td><button style="background: rgb(32, 117, 214); color: white; width: 150px; height: 30px; border: 1px ; border-radius: 20px;">Finalizar compra</button></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="product">
+                        <img style="width: 120px; height: 120px;" src="assets/paris.jpg" alt="" />
+                        <div class="info">
+                          <div class="name">Paris, França</div>
+                          <div class="category">De 19 de Out até 23 de Out <br>São Paulo ✈ Paris <br> + Hospedagem</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>R$ 14.103</td>
+                    <td>
+                      <div class="qty">
+                        <button><i class="bx bx-minus"></i></button>
+                        <span>1</span>
+                        <button><i class="bx bx-plus"></i></button>
+                      </div>
+                    </td>
+                    <td>R$ 14.103</td>
+                    <td>
+                      <button class="remove"><i class="bx bx-x"></i></button>
+                    </td>
+                    <td><button style="background: rgb(32, 117, 214); color: white; width: 150px; height: 30px; border: 1px ; border-radius: 20px;">Finalizar compra</button></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="product">
+                        <img style="width: 120px; height: 120px;" src="assets/brasilia.jpg" alt="" />
+                        <div class="info">
+                          <div class="name">Brasilia</div>
+                          <div class="category">De 26 de Dez até 02 de Jan <br> Rio de Janeiro ✈ Brasilia</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>R$ 4.017</td>
+                    <td>
+                      <div class="qty">
+                        <button><i class="bx bx-minus"></i></button>
+                        <span>1</span>
+                        <button><i class="bx bx-plus"></i></button>
+                      </div>
+                    </td>
+                    <td>R$ 4.017</td>
+                    <td>
+                      <button class="remove"><i class="bx bx-x"></i></button>
+                    </td>
+                    <td><button style="background: rgb(32, 117, 214); color: white; width: 150px; height: 30px; border: 1px ; border-radius: 20px;">Finalizar compra</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </div>
+      </main>
+              <!--Rodapé-->
+
+<footer>
+  <div id="footer_content">
+      <div id="footer_contacts">
+          <h1>AeroGIN</h1>
+          <p>Melhor agência de passagens <br> e hospedagens para você.</p>
+          <div id="footer_social_media">
+              <a href="#" class="footer-link" id="instagram">
+                  <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="footer-link" id="facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="footer-link" id="whatsapp">
+                  <i class="fa-brands fa-whatsapp"></i>
+              </a>
+          </div>
+      </div>
+      
+      <ul class="footer-list">
+          <li>
+              <h3>Sobre:</h3>
+          </li>
+          <li>
+              <a href="#" class="footer-link">Melhores Hospedagens...</a>
+          </li>
+          <li>
+              <a href="#" class="footer-link">Passagens mais baratas..</a>
+          </li>
+          <li>
+              <a href="#" class="footer-link">Muito mais conforto!</a>
+          </li>
+      </ul>
+
+      <ul class="footer-list">
+          <li>
+              <h3>Alunos</h3>
+          </li>
+          <li>
+              <a href="#" class="footer-link">Ícaro Raphael</a>
+          </li>
+          <li>
+              <a href="#" class="footer-link">Manoel Moreira Neto</a>
+          </li>
+          <li>
+              <a href="#" class="footer-link">Geovanna Mâcedo</a>
+          </li>
+      </ul>
+
+      <div id="footer_subscribe">
+          <h3>Contato</h3>
+
+          <p>
+              Coloque seu e-mail logo abaixo, para entrarmos em contato!
+          </p>
+
+          <div id="input_group">
+              <input type="email" id="email">
+              <button>
+                  <i class="fa-regular fa-envelope"></i>
+              </button>
+          </div>
+      </div>
+  </div>
+
+  <div id="footer_copyright">
+      &#169
+      2023 Todos direitos reservados
+  </div>
+</footer>
+</body>
+</html>
