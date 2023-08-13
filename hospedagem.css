@@ -141,8 +141,8 @@
         }
 
         .topdestino > span{
-            font-size: 12px;
-            opacity: 100%;
+            font-size: 10px;
+            opacity: 70%;
         }
 
         .datai{
@@ -150,8 +150,8 @@
             flex-direction: column;
         }
         .topchecki > span{
-            font-size: 12px;
-            opacity: 100%;
+            font-size: 10px;
+            opacity: 70%;
         }
 
         .datao{
@@ -160,8 +160,8 @@
         }
 
         .topchecko > span{
-            font-size: 12px;
-            opacity: 100%;
+            font-size: 10px;
+            opacity: 70%;
         }
 
         .quartos{
@@ -170,8 +170,8 @@
         }
 
         .topquartos > span{
-            font-size: 12px;
-            opacity: 100%; 
+            font-size: 10px;
+            opacity: 70%;
         }
 
         .datai, .datao input{
