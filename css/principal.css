@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+
+:root{
+    --cor0: #F2F2F2;
+    --cor1: #0455BF;
+    --cor2: #056CF2;
+    --cor3: #0439D9;
+    --cor4: #3c8bf3;
+    --cor5: #010626;
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
+li{
+    list-style: none;
+}
+
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--cor0);
+}
+
+.container{
+    display: flex;
+    padding: 30px;
+    margin: 0px;
+    justify-content: center;
+    background: linear-gradient(to right, var(--cor2), var(--cor4));
+}
+
+.container-2{
+    display: flex;
+    flex-direction: column;
+    margin: 0 11%;
+    padding: 30px 0px;
+    background: var(--cor1);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(68,68,68,0.5);
+    justify-content: center;
+    align-items: center;
+    width: 100%;  
+}
+
+.check{
+    margin-left: 150px;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+
+.check *{
+    margin-left: 14px;
+    color: white;
+    font-size: 1em;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.inputs input{
+    background: none;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.inputs #botao{
+    background-color: var(--cor2);
+    color: white;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.inputs #botao:hover{
+    background-color: var(--cor4);
+    color: white;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.origem, .destino, .datai, .datav, .pass, #botao{
+    display: flex;
+    background-color: white;
+    width: 140px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 7px;
+    border: 2px solid rgba(255, 255, 255, 0.296);
+    margin: 1px 3px;
+}
+
+.origem{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.topOrigem > span{
+    font-size: 10px;
+    opacity: 70%;
+}
+
+.destino{
+    display: flex;
+    flex-direction: column;
+}
+
+.topDestino > span{
+    font-size: 10px;
+    opacity: 70%;
+}
+
+.datai{
+    display: flex;
+    flex-direction: column;
+}
+
+.topDatai > span{
+    font-size: 10px;
+    opacity: 70%;
+}
+
+.datav{
+    display: flex;
+    flex-direction: column;
+}
+
+.topDatav > span{
+    font-size: 10px;
+    opacity: 70%;
+}
+
+.pass{
+    display: flex;
+    flex-direction: column;
+}
+
+.topPass > span{
+    font-size: 10px;
+    opacity: 70%;
+}
+
+main{
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+.sessao{
+    background-color: white;
+    padding: 32px 0;
+}
+
+.title{
+    margin: 50px;
+    padding-top: 30px;
+}
+
+.topmain{
+    margin: 100px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    margin: 25px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+
+.card-1 {
+    grid-area: card-1;
+    width: 600px;
+    margin: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+
+.card-2 {
+    grid-area: card-2;
+    width: 600px;
+    margin: 25px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+
+.bottomCard{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 20px;
+}
+
+.bottomText{
+    width: 365px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#verofertas{
+    color: white;
+    text-decoration: none;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    font-size: 14px;
+    background-color: var(--cor3);
+    border-radius: 50px;
+}
+
+.oferta{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 16px;
+    grid-template-areas: 
+    "title-1 title-2"
+    "card-1 card-2";
+}
+
+.container-of{
+    box-sizing: content-box;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.title1{
+    grid-area: title1;
+    padding: 0 32px;
+    margin: 0 0 16px 12px;
+}
+
+.title2{
+    grid-area: title2;
+    padding: 0 32px;
+}
+
+.mediaCard-1{
+    background: url(../imagens/Maldivas.png) center/cover;
+    height: 300px;  
+    width: 100%;
+}
+
+.mediaCard-2{
+    background: url(../imagens/Paris.projeto.png) center/cover;
+    height: 300px;  
+    width: 100%;
+}
+
+.mediaCard-3{
+    background: url(../imagens/gramado.projeto.png) center/cover;
+    height: 300px;  
+    width: 100%;
+}
+
+.mediaCard-4{
+    background: url(../imagens/salvador.projeto.png) center/cover;
+    height: 300px;  
+    width: 100%;
+}
+
+.mediaCard-5{
+    background: url(../imagens/WhatsApp\ Image\ 2023-08-12\ at\ 17.48.41.jpeg) center/cover;
+    height: 300px;  
+    width: 100%;
+}
+
+.mediaCard-6{
+    background: url(../imagens/jovem-bonito-e-sorridente-em-roupa-casual-sentado-a-mesa-trabalhando-em-um-laptop-e-ficando-em-casa-sozinho.jpg) center/cover;
+    height: 300px;
+    width: 100%;
+}
+
+.mediaCard-7{
+    background: url(../imagens/quijingue.jpg) center/cover;
+    height: 300px;
+    width: 100%;
+}
+
+.topBox{
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+}
+
+.topBox > .card{
+    width: 100%;
+}
+
+.topBox > .card:hover{
+    transform: scale3d(1.03, 1.03, 1);
+}
+
+.bottomBox{
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+}
+
+.bottomBox > .card{
+    width: 100%;
+}
+
+.bottomBox > .card:hover{
+    transform: scale3d(1.03, 1.03, 1);
+}

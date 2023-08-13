@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de login</title>
+    <link rel="stylesheet" href="css/telaregistro.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+</head>
+<body>
+    <div class="container">
+        <div class="form-img">
+            <img src="assets/img/undraw_travel_booking_re_6umu (2).svg" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Faça seu cadastro</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="principal.html">Entrar</a></button>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail: </label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu E-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="celular">Celular: </label>
+                        <input type="tel" id="celular" name="celular" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="senha">Senha: </label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="confsenha">Confirme sua senha: </label>
+                        <input type="password" id="confsenha" name="confsenha" placeholder="Digite sua senha" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="genero">Gênero: </label>
+                        <select style=" margin: 0.6rem 0; padding: 0.8rem 0.6rem; border: none; border-radius: 10px; box-shadow: 1px 1px 6px #0000001c;">
+                            <option value="0"></option>
+                            <option value="1">Feminino</option>
+                            <option value="2">Masculino</option>
+                            <option value="3">Outro</option>
+                            <option value="4">Prefiro não dizer</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="continue-button">
+                    <button><a href="#" style=" text-decoration: none; font-size: 0.93rem; font-weight: 500; color: white;">Concluir</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
