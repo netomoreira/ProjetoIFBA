@@ -1,3 +1,4 @@
+// Filtragem e classificação de resultados de pesquisa: 
 var hospedagens = [
     { cidade: "Rio Branco", checkIn: "2024-02-10", checkOut: "2024-02-15", quartos: 1, preco: 150 },
     { cidade: "Rio Branco", checkIn: "2024-02-10", checkOut: "2024-02-15", quartos: 2, preco: 200 },
@@ -14,13 +15,13 @@ var hospedagens = [
   ];
   
   function pesquisar() {
-    // Recuperar os valores dos inputs
+    
     var cidade = document.getElementById("cidade").value;
     var checkIn = document.getElementById("check-in").value;
     var checkOut = document.getElementById("check-out").value;
     var quartos = parseInt(document.getElementById("quartos").value);
   
-    // Filtrar as hospedagens com base nos critérios de pesquisa
+    
     var resultados = hospedagens;
   
     if (cidade) {
@@ -39,13 +40,12 @@ var hospedagens = [
       });
     }
   
-    // Exibir os resultados na página
     var resultadosPesquisa = document.getElementById("resultadosPesquisa");
     resultadosPesquisa.innerHTML = "";
   
     if (resultados.length === 0) {
       resultadosPesquisa.innerHTML =
-        "<p>Não temos hospedagem disponível. Tente outro local ou data</p>";
+        "<p='no-results'>Não temos hospedagem disponível. Tente outro local ou data</p=>";
     } else {
       resultados.forEach(function (hospedagem) {
         var resultadoHtml =
@@ -69,7 +69,6 @@ var hospedagens = [
         resultadosPesquisa.innerHTML += resultadoHtml;
       });
   
-      // Adicionar eventos de clique aos botões de navegação
       var anterior = document.getElementById("anterior");
       var proximo = document.getElementById("proximo");
   
@@ -89,3 +88,5 @@ var hospedagens = [
       }
     }
   }
+  //*
+  
