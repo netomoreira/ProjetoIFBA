@@ -202,6 +202,8 @@
             
         }
         
+        /* cards */
+
         .container-card{
             width: 100%;
             display: flex;
@@ -267,14 +269,26 @@
             border-radius: 5px;
             padding: 10px;
             margin-bottom: 10px;
+            width: 300px;
+            margin: 5px;
+            flex: 1 0 300px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+            transition: 0.3s;
+            flex-wrap: wrap;
+            justify-content: space-between;
           }
           
           #resultadosPesquisa .card p {
             margin: 0;
+            
           }
 
           #resultadosPesquisa .card:hover {
-            background-color: #f5f5f5;
+            background-color: #c5c2c2;
+            transform: scale3d(1.03, 1.03, 1);
+            
           }
 
           .is-invalid {

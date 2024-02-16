@@ -1,5 +1,3 @@
-
-
 // FILTRAGEM DE CLASSIFICAÇÃO PARA OS RESULTADOS DA PESQUISA
 var hospedagens = [
     { cidade: "Rio Branco", checkIn: "2024-02-10", checkOut: "2024-02-15", quartos: 1, preco: 150 },
@@ -24,8 +22,8 @@ var hospedagens = [
     { cidade: "Chapecó", checkIn: "2024-02-10", checkOut: "2024-02-13", quartos: 2, preco: 350 },
     { cidade: "Florianópolis", checkIn: "2024-02-18", checkOut: "2024-02-22", quartos: 1, preco: 250 },
     { cidade: "Florianópolis", checkIn: "2024-02-18", checkOut: "2024-02-22", quartos: 2, preco: 400 },
-    { cidade: "Santa Catarina", checkIn: "2024-02-10", checkOut: "2024-02-15", quartos: 1, preco: 200 },
-    { cidade: "Santa Catarina", checkIn: "2024-02-10", checkOut: "2024-02-15", quartos: 2, preco: 300 },
+    { cidade: "Blumenau", checkIn: "2024-02-10", checkOut: "2024-02-15", quartos: 1, preco: 200 },
+    { cidade: "Blumenau", checkIn: "2024-02-10", checkOut: "2024-02-15", quartos: 2, preco: 300 },
   ];
   
   function pesquisar() {
