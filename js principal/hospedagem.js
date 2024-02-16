@@ -27,10 +27,10 @@ var hospedagens = [
   ];
   
   function pesquisar() {
-    
+  //VALIDACAO DE FORMULARIO
     var cidade = document.getElementById("cidade").value;
     if (cidade.length === 0) {
-        alert("Por favor, informe a cidade.");
+        alert("É necessário pelo menos selecionar uma cidade.");
         return;
       }
     var checkIn = document.getElementById("check-in").value;
@@ -61,7 +61,7 @@ var hospedagens = [
   
     if (resultados.length === 0) {
       resultadosPesquisa.innerHTML =
-        "<p='no-results'>Não temos hospedagem disponível. Tente outro local ou data</p=>";
+      "<div class='textopesquisa'>" + "<p>Não temos hospedagem disponível, tente outro local ou data.</p>";
     } else {
       resultados.forEach(function (hospedagem) {
         var resultadoHtml =

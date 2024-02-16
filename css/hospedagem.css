@@ -201,7 +201,7 @@
             padding-top: 30px;
             
         }
-        
+
         /* cards */
 
         .container-card{
@@ -265,7 +265,7 @@
         }
 
         #resultadosPesquisa .card {
-            border: 1px solid #ccc;
+            border: 1px solid #000000;
             border-radius: 5px;
             padding: 10px;
             margin-bottom: 10px;
@@ -276,8 +276,6 @@
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
             transition: 0.3s;
-            flex-wrap: wrap;
-            justify-content: space-between;
           }
           
           #resultadosPesquisa .card p {
@@ -288,18 +286,31 @@
           #resultadosPesquisa .card:hover {
             background-color: #c5c2c2;
             transform: scale3d(1.03, 1.03, 1);
+            cursor: pointer;
             
           }
 
-          .is-invalid {
+          #resultadosPesquisa .textopesquisa{
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-weight: 450px;
+            font-size: 20px;
+            margin: 0px;
+            padding-top: 20px;
+
+                
+          }
+
+
+          #resultadosPesquisa .is-invalid {
             border-color: #dc3545;
           }
           
-          .invalid-feedback {
+          #resultadosPesquisa .invalid-feedback {
             display: none;
           }
           
-         .form-control.is-invalid + .invalid-feedback {
+          #resultadosPesquisa .form-control.is-invalid + .invalid-feedback {
             display: block;
           }
         
