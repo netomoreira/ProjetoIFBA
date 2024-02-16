@@ -19,6 +19,10 @@ var hospedagens = [
   function pesquisar() {
     
     var cidade = document.getElementById("cidade").value;
+    if (cidade.length === 0) {
+        alert("Por favor, informe a cidade.");
+        return;
+      }
     var checkIn = document.getElementById("check-in").value;
     var checkOut = document.getElementById("check-out").value;
     var quartos = parseInt(document.getElementById("quartos").value);
@@ -70,45 +74,5 @@ var hospedagens = [
           "</div>";
         resultadosPesquisa.innerHTML += resultadoHtml;
       });
-  
-      var anterior = document.getElementById("anterior");
-      var proximo = document.getElementById("proximo");
-  
-      if (currentPage === 1) {
-        anterior.disabled = true;
-      } else {
-        anterior.disabled = false;
-      }
-  
-      if (
-        Math.ceil(resultados.length / resultsPerPage) === currentPage ||
-        resultados.length === 0
-      ) {
-        proximo.disabled = true;
-      } else {
-        proximo.disabled = false;
-      }
-    }
   }
-  //*
-
- // VALIDAÇÃO DE FORMULÁRIO
-
- function pesquisar(){
-   // Get the form fields
-   var cidade = document.getElementById("cidade");
-   var checkIn = document.getElementById("check-in");
-   var checkOut = document.getElementById("check-out");
-   var quartos = document.getElementById("quartos");
- 
-   // Validate the form fields
-   if (cidade.value === "") {
-     alert("É preciso que selecione pelo menos uma cidade.");
-     cidade.classList.add("is-invalid");
-     return;
-   } else {
-     cidade.classList.remove("is-invalid");
-   }
-
- };
-
+}
