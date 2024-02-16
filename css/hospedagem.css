@@ -272,9 +272,21 @@
           #resultadosPesquisa .card p {
             margin: 0;
           }
-          
+
           #resultadosPesquisa .card:hover {
             background-color: #f5f5f5;
+          }
+
+          .is-invalid {
+            border-color: #dc3545;
+          }
+          
+          .invalid-feedback {
+            display: none;
+          }
+          
+         .form-control.is-invalid + .invalid-feedback {
+            display: block;
           }
         
     

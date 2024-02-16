@@ -1,4 +1,6 @@
-// Filtragem e classificação de resultados de pesquisa: 
+
+
+// FILTRAGEM DE CLASSIFICAÇÃO PARA OS RESULTADOS DA PESQUISA
 var hospedagens = [
     { cidade: "Rio Branco", checkIn: "2024-02-10", checkOut: "2024-02-15", quartos: 1, preco: 150 },
     { cidade: "Rio Branco", checkIn: "2024-02-10", checkOut: "2024-02-15", quartos: 2, preco: 200 },
@@ -89,4 +91,24 @@ var hospedagens = [
     }
   }
   //*
-  
+
+ // VALIDAÇÃO DE FORMULÁRIO
+
+ function pesquisar(){
+   // Get the form fields
+   var cidade = document.getElementById("cidade");
+   var checkIn = document.getElementById("check-in");
+   var checkOut = document.getElementById("check-out");
+   var quartos = document.getElementById("quartos");
+ 
+   // Validate the form fields
+   if (cidade.value === "") {
+     alert("É preciso que selecione pelo menos uma cidade.");
+     cidade.classList.add("is-invalid");
+     return;
+   } else {
+     cidade.classList.remove("is-invalid");
+   }
+
+ };
+
