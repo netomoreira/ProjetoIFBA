@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <script type="text/javascript" src="js principal/hospedagem.js"></script>
 </head>
-<script>
-
-</script>
 <body>
         <!--Cabeçalho-->
 
@@ -162,8 +160,9 @@
             <option value="4">4 Quartos</option>
         </select>
     </div> 
-        <input id="botao" type="button" value="Pesquisar">
+        <input id="botao" type="button" value="Pesquisar" onclick="pesquisar()">
         </div>
+        <div id="resultadosPesquisa"></div>
     </div>
 </div>
 
@@ -172,7 +171,7 @@
         <div class="topSection">
             <h1 class="title">Encontre sua melhor hospedagem aqui</h1>
         </div>
-        <div class="container-card ">
+        <div class="container-card" id="resultadosPesquisa">
             <div class="card">
                 <div class="imagem">
                 <img class="imagem-card" src="assets/hotel.jpg" alt="hotel.jpg">
