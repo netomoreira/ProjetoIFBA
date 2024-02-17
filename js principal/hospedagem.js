@@ -30,7 +30,13 @@ var hospedagens = [
   //VALIDACAO DE FORMULARIO
     var cidade = document.getElementById("cidade").value;
     if (cidade.length === 0) {
-        alert("É necessário pelo menos selecionar uma cidade.");
+        alert()(Swal.fire({
+          icon: "error",
+          title: "Algo está errado...",
+          text: "É necessário pelo menos uma cidade.",
+          footer: '<a href="#">Por que esse erro?</a>'
+        })
+        );
         return;
       }
     var checkIn = document.getElementById("check-in").value;
