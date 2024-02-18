@@ -67,11 +67,15 @@ function pesquisar() {
           "<div class='textopesquisa'>" + "<p>Não temos hospedagem disponível, tente outro local ou data.</p></div>";
   } else {
       resultados.forEach(function (hospedagem, index) {
+        var checkInFormatado = moment(hospedagem.checkIn).format("DD/MM/YYYY");
+        var checkOutFormatado = moment(hospedagem.checkOut).format("DD/MM/YYYY");
+
+
           var resultadoHtml =
               "<div class='card' data-hospedagem-id='" + index + "'>" +
               "<p>Cidade: " + hospedagem.cidade + "</p>" +
-              "<p>Check-in: " + hospedagem.checkIn + "</p>" +
-              "<p>Check-out: " + hospedagem.checkOut + "</p>" +
+              "<p>Check-in: " + checkInFormatado + "</p>" +
+              "<p>Check-out: " + checkOutFormatado + "</p>" +
               "<p>Quartos: " + hospedagem.quartos + "</p>" +
               "<p>Preço: R$" + hospedagem.preco + "</p>" +
               "</div>";
