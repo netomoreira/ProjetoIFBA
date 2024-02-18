@@ -32,7 +32,7 @@ function pesquisar() {
       Swal.fire({
           icon: "error",
           title: "Algo está errado...",
-          text: "É necessário pelo menos uma cidade.",
+          text: "É necessário pelo menos a escolha de uma cidade.",
           footer: '<a href="#">Por que esse erro?</a>'
       });
       return;
@@ -81,7 +81,7 @@ function pesquisar() {
           card.addEventListener('click', function () {
               Swal.fire({
                   title: "Você tem certeza?",
-                  icon: "warning",
+                  icon: "question",
                   showCancelButton: true,
                   confirmButtonColor: "#3085d6",
                   cancelButtonColor: "#d33",
