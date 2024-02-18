@@ -66,9 +66,9 @@ function pesquisar() {
       resultadosPesquisa.innerHTML =
           "<div class='textopesquisa'>" + "<p>Não temos hospedagem disponível, tente outro local ou data.</p></div>";
   } else {
-      resultados.forEach(function (hospedagem) {
+      resultados.forEach(function (hospedagem, index) {
           var resultadoHtml =
-              "<div class='card' data-hospedagem-id='" + hospedagem.id + "'>" +
+              "<div class='card' data-hospedagem-id='" + index + "'>" +
               "<p>Cidade: " + hospedagem.cidade + "</p>" +
               "<p>Check-in: " + hospedagem.checkIn + "</p>" +
               "<p>Check-out: " + hospedagem.checkOut + "</p>" +
@@ -76,9 +76,12 @@ function pesquisar() {
               "<p>Preço: R$" + hospedagem.preco + "</p>" +
               "</div>";
           resultadosPesquisa.innerHTML += resultadoHtml;
+      });
 
-          var card = document.querySelector('[data-hospedagem-id="' + hospedagem.id + '"]');
-          card.addEventListener('click', function () {
+      var cards = document.querySelectorAll('.card');
+      cards.forEach(function(card) {
+          card.addEventListener('click', function(){
+              var hospedagemId = this.getAttribute('data-hospedagem-id');
               Swal.fire({
                   title: "Você tem certeza?",
                   icon: "question",
