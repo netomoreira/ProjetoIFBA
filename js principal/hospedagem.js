@@ -72,7 +72,7 @@ function pesquisar() {
 
 
           var resultadoHtml =
-              "<div class='card' data-hospedagem-id='" + index + "'>" +
+              "<div class='result-card' data-hospedagem-id='" + index + "'>" +
               "<p>Cidade: " + hospedagem.cidade + "</p>" +
               "<p>Check-in: " + checkInFormatado + "</p>" +
               "<p>Check-out: " + checkOutFormatado + "</p>" +
@@ -82,7 +82,7 @@ function pesquisar() {
           resultadosPesquisa.innerHTML += resultadoHtml;
       });
 
-      var cards = document.querySelectorAll('.card');
+      var cards = document.querySelectorAll('.result-card');
       cards.forEach(function(card) {
           card.addEventListener('click', function(){
               var hospedagemId = this.getAttribute('data-hospedagem-id');
@@ -106,4 +106,11 @@ function pesquisar() {
           });
       });
   }
+}
+
+function limparCampos() {
+  document.getElementById("cidade").value = "";
+  document.getElementById("check-in").value = "";
+  document.getElementById("check-out").value = "";
+  document.getElementById("quartos").value = "";
 }
