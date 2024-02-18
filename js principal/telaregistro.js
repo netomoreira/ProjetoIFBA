@@ -1,4 +1,4 @@
-// Validação de senha
+// Validação de campos
 function validaNome(nome) {
     const nomeRegex = /^[a-zA-Zà-úÀ-Ú ]+$/;
     return nomeRegex.test(nome);
