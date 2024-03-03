@@ -6,6 +6,9 @@
     <title>Página de login</title>
     <link rel="stylesheet" href="css/telaregistro.css">
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="js principal/telaregistro.js"></script>
 </head>
 <body>
     <div class="container">
@@ -13,13 +16,13 @@
             <img src="assets/img/undraw_travel_booking_re_6umu (2).svg" alt="">
         </div>
         <div class="form">
-            <form action="#">
+            <form id="registration-form">
                 <div class="form-header">
                     <div class="title">
                         <h1>Faça seu cadastro</h1>
                     </div>
                     <div class="login-button">
-                        <button><a href="principal.html">Entrar</a></button>
+                        <button type="button" id="login-btn">Entrar</button>
                     </div>
                 </div>
                 <div class="input-group">
@@ -59,10 +62,15 @@
                     </div>
                 </div>
                 <div class="continue-button">
-                    <button><a href="#" style=" text-decoration: none; font-size: 0.93rem; font-weight: 500; color: white;">Concluir</a></button>
+                    <button type="submit">Concluir</button>
                 </div>
             </form>
         </div>
     </div>
+    <script>
+        document.getElementById('login-btn').addEventListener('click', function() {
+            window.location.href = 'principal.html';
+        });
+    </script>
 </body>
 </html>
