@@ -119,3 +119,25 @@ button:hover {
     text-decoration: underline;
 
 }
+
+.admin-login {
+    text-align: center; /* Centraliza o link dentro da div */
+    margin-top: 20px; /* Espaço acima da div */
+}
+
+.admin-login a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+    font-size: 1rem; /* Tamanho da fonte */
+    margin-top: 10px; /* Espaço acima do botão */
+}
+
+.admin-login a:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}

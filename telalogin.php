@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +11,16 @@
     <section>
         <div class="form-box">
             <div class="form-value">
-                <form id="login-form">
+                <form id="login-form" action="exibir.php" method="GET">
                     <h2>AeroGIN</h2>
                     <div class="inputbox">
                         <ion-icon name="mail-outline"></ion-icon>
-                        <input type="email" required>
+                        <input type="email" name="email" required>
                         <label for="">E-mail</label>
                     </div>
                     <div class="inputbox">
                         <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" required>
+                        <input type="password" name="senha" required>
                         <label for="">Senha</label>
                     </div>
                     <div class="lembrar">
@@ -33,6 +33,9 @@
                     </div>
                 </form>           
             </div>
+        </div>
+        <div class="admin-login">
+            <a href="admin_login.php">Login de Administrador</a>
         </div>
     </section>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
